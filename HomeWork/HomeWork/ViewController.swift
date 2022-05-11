@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var number = 2.5
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //var x=1
+        print(number)
+        
         // Do any additional setup after loading the view.
     }
 
