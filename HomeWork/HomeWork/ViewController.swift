@@ -8,16 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var number = 2.5
-    
-    
+    var number1 = 2.5
+    var number2 = 9.7
+    var number3 = 6.9
+    var number4 = 8.2
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(number)
-        
+        print("первое число \(number1)")
+        print("второе число \(number2)")
+        print("третье число \(number3)")
+        print("четвёртое число \(number4)")
         // Do any additional setup after loading the view.
     }
-
-
 }
-
