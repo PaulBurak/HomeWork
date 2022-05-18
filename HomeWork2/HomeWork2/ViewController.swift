@@ -20,8 +20,15 @@ class ViewController: UIViewController {
         print(umnozh)
         let delenie = delenie(N1: 8, N2: 2)
         print(delenie)
+        
         //let peregr = summing(N1: 2.1, N2: 3.5) //
-        //print("Перегрузка \(peregr)") //перегрузка функции
+        //print("Перегрузка \(peregr)") //перегрузка функции чёт не сработала
+        
+        // let sravnenie(str1: "авб", str2: "ввш") //не понял, как дальше быть
+        print(sravnenie)
+    
+       // print(factorialN)
+       // ViewController.factorialN(5)
         
         
         
@@ -41,23 +48,29 @@ class ViewController: UIViewController {
     func delenie(N1: Int, N2: Int) -> Int {  //деление
         return N1 / N2
     }
-
-    // в перегрузку пока не вник
     
-    func summing(N1:Double, N2:Double) -> Double {
+    func summing(N1:Double, N2:Double) -> Double { //перегрузка
         return N1 + N2
     }
 
-    func sravnenie(st1: String, str2: String) -> String { //сравнение строк авб и ввш
-        let one = "авб"
-        let two = "ввш"
-        if one == two {
-            return "строки равны между собой"
+    func sravnenie(str1: String, str2: String) -> String {  //сравнение строк авб и ввш
+            let resultat: String
+            
+        if str1 > str2 {
+            resultat = "Строка \(str1) больше строки \(str2)\n"
+            print(resultat)
+            return resultat
+        } else if str1 < str2 {
+            resultat = "Строка \(str1) меньше строки \(str2)\n"
+            print(resultat)
+            return resultat
         } else {
-            return "строки не равны между собой"
+            resultat = "Строка \(str1) меньше строки \(str2)\n"
+            print(resultat)
+            return resultat
         }
     }
-
+    
     //циклический вызов функции
     static func cyclefunc (x: Int8) -> Int8 {
         return x
